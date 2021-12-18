@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      #header {
+        background-color: #363636;
+        justify-content: space-between;
+        text-align: center;
+        height: 6vw;
+      }
+      .logo {
+        width: 20vw;
+        height: 5vw;
+      }
+
+      .txtSearch {
+        background-color: rgba(255, 255, 255, 0.068);
+        padding-bottom: 5px;
+        outline: none;
+        height: calc(100% - 2vw);
+        margin-top: 1vw;
+        vertical-align: top;
+        border: none;
+        width: 50vw;
+        color: white;
+        font-size: 16px;
+        padding: 1vw;
+      }
+
+      .txtSearch:focus {
+        background-color: rgba(255, 255, 255, 0.185);
+      }
+
+      .btnSearch {
+        height: calc(100% - 3vw);
+        vertical-align: top;
+        margin-top: 1vw;
+        background-color: rgba(0, 0, 0, 0.171);
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-left: -5px;
+        color: white;
+        cursor: pointer;
+        padding-top: 1vw;
+        font-size: 2vw;
+      }
+
+      .notification {
+        height: calc(100% - 3vw);
+        vertical-align: top;
+        margin-top: 1vw;
+        color: white;
+        cursor: pointer;
+        padding-top: 1vw;
+        font-size: 2vw;
+      }
+
+      .newMessages {
+        background-color: red;
+        color: white;
+        font-family: Arial;
+        position: relative;
+        width: 1.7vw;
+        height: 1.7vw;
+        display: block;
+        margin-left: 2vw;
+        margin-top: -3vw;
+        font-size: 1.7vw;
+        border-radius: 3px;
+      }
+
+      .video {
+        width: 60%;
+        padding: 3vw;
+        display: inline-block;
+      }
+
+      .video iframe {
+        width: 100%;
+        height: 100%;
+        box-shadow: red 0px 0px 29px 0px;
+      }
+
+      .suggestedVideos {
+        width: 30%;
+        display: inline-block;
+        position: absolute;
+        margin-top: 4vw;
+      }
+      .suggestedVideo {
+        border-bottom: solid 1px silver;
+        padding-bottom: 3vw;
+        vertical-align: top;
+      }
+      .suggestedVideo img {
+        width: 45%;
+        float: left;
+      }
+      .suggestedVideo h4 {
+        color: white;
+        padding-left: 52%;
+        font-family: Arial;
+      }
+      .suggestedVideo span {
+        color: silver;
+        padding-left: 52%;
+        font-family: Arial;
+        display: block;
+      }
+
+      .videoDetail h1 {
+        color: white;
+        font-family: Arial;
+        display: inline-block;
+      }
+
+      .likes {
+        color: red;
+        float: right;
+        font-size: 1.5rem;
+        padding-top: 1vw;
+      }
+
+      .likes span {
+        font-family: Arial;
+      }
+      .videoDetail p {
+        color: silver;
+        font-family: Arial;
+        font-size: 1.3rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .video {
+          width: 93%;
+          display: block;
+        }
+
+        .suggestedVideos {
+          width: 93%;
+          display: block;
+        }
+        .suggestedVideo {
+          border-bottom: solid 1px silver;
+          width: 49%;
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img src="logo.png" class="logo" />
+      <input type="text" class="txtSearch" />
+      <i class="fa fa-search btnSearch" title="Search"></i>
+      <i class="fa fa-bell notification"><span class="newMessages">5</span></i>
+    </div>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/GhZaM4tQ_F8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="videoDetail">
+        <h1>Liverpool 3 - 1 New Castle</h1>
+        <i class="fa fa-heart likes"><span>329K</span></i>
+        <p>
+          Liverpool beat Newcastle at anfield to stick to the top of table. They
+          need three more games to win 2020/21 premire league. If they success,
+          It will be their first title since 1990.
+        </p>
+      </div>
+    </div>
+
+    <div class="suggestedVideos">
+      <div class="suggestedVideo">
+        <img src="img1.jpg" class="thumbnail" />
+        <h4>Liverpool 5 - 3 Chelsea</h4>
+        <span class="duration">Duration: 5:10</span>
+        <span class="views">584K Views</span>
+        <span class="uploadTime">Uploadded 8 hours ago</span>
+      </div>
+      <div class="suggestedVideo">
+        <img src="img2.jpg" class="thumbnail" />
+        <h4>Birmingham 1 - 0 Chelsea</h4>
+        <span class="duration">Duration: 5:10</span>
+        <span class="views">584K Views</span>
+        <span class="uploadTime">Uploadded 8 hours ago</span>
+      </div>
+      <div class="suggestedVideo">
+        <img src="img3.jpg" class="thumbnail" />
+        <h4>Chelsea 1 - 0 Man City</h4>
+        <span class="duration">Duration: 5:10</span>
+        <span class="views">584K Views</span>
+        <span class="uploadTime">Uploadded 8 hours ago</span>
+      </div>
+      <div class="suggestedVideo">
+        <img src="img4.jpg" class="thumbnail" />
+        <h4>Chelsea 6 - 0 Bristol</h4>
+        <span class="duration">Duration: 5:10</span>
+        <span class="views">584K Views</span>
+        <span class="uploadTime">Uploadded 8 hours ago</span>
+      </div>
+    </div>
+  </body>
+</html>
